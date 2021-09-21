@@ -32,8 +32,8 @@ app.engine(
     })
 );
 
-app.set('views', './views'); // especifica el directorio de vistas
-app.set('view engine', 'hbs'); // registra el motor de plantillas
+app.set('views', './views');
+app.set('view engine', 'hbs');
 
 let arrayProductos = [
     {
@@ -107,8 +107,6 @@ app.get('/', (req, res) => {
 app.get('/productos/vista', (req, res) => {
     res.render('productos', { listaProductos: arrayProductos });
 });
-
-
 
 
 
